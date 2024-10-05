@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huon Valley Pressure Washing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section with Banner -->
+    <header>
+        <img src="HVPW_Banner.jpg" alt="Huon Valley Pressure Washing Banner" class="banner">
+    </header>
+
+    <!-- Services Section with Get a Free Quote functionality -->
+    <section id="services-banner">
+        <h2>Our Services</h2>
+        <p>Click on a service to get a free quote!</p>
+    </section>
+
+    <!-- Services Section (Clickable Buttons) -->
+    <section id="services">
+        <ul>
+            <li onclick="startQuote('Roof Cleaning')">Roof Cleaning</li>
+            <li onclick="startQuote('Driveway Cleaning')">Driveway Cleaning</li>
+            <li onclick="startQuote('Deck Cleaning')">Deck Cleaning</li>
+            <li onclick="startQuote('Concrete Cleaning')">Concrete Cleaning</li>
+            <li onclick="startQuote('Graffiti Removal')">Graffiti Removal</li>
+            <li onclick="startQuote('External Walls House Cleaning')">External Walls House Cleaning</li>
+            <li onclick="startQuote('Sealing & Surface Protection')">Sealing & Surface Protection</li>
+        </ul>
+    </section>
+
+    <!-- Quote Section (hidden initially, will be shown when a service is clicked) -->
+    <section id="quote" style="display: none;">
+        <h2>Get a Free Quote</h2>
+        <p id="selected-service"></p>
+        <input type="text" id="dimensions" placeholder="Enter dimensions (length x width in meters)">
+        <button onclick="calculateQuote()">Get Quote</button>
+        <div id="quote-result"></div>
+    </section>
+
+    <!-- Chatbot Interaction Section (Optional) -->
+    <section id="chatbot" style="display: none;"></section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Huon Valley Pressure Washing. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
